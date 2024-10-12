@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <section>
+       <div class="hero">
+           <div class="bodyContiner">
+               <div class="button">
+                   <button id="singup">Sign Up</button>
+                   <button id="login">Login Up</button>
+               </div>
+               <form id="form1">
+                  <h1>Sign Up For Free</h1>
+                   <div class="name">
+                       <input id="name" type="text" placeholder="First Name">
+                       <input id="name" type="text" placeholder="Lest Name">
+                   </div>
+                    <input type="email" id="email" name="email" placeholder="Enter Email" required class="input">
+                    <input type="password" id="password" placeholder="Password" name="password" required class="input">
+                   
+                   <input type="submit" id="submit" value="GET STARTED" class="submit">
+               </form>   
+               
+               <form id="form2">
+                <h1>Welcome</h1>
+                  <input type="email" id="input" name="email" placeholder="Enter Email" required class="input">
+                  <input type="password" id="input" placeholder="Password" name="password" required class="input">
+                 
+                 <input type="submit" id="submit" value="GET STARTED" class="submit">
+             </form>  
+
+
+
+           </div>
+       </div>
+   </section>
+
+   <script>
+       const btn1=document.querySelector('#singup');
+       const btn2=document.querySelector('#login');
+       const form1=document.querySelector('#form1');
+       const form2=document.querySelector('#form2');
+       btn1.addEventListener('click',function(){
+            btn1.style.background="rgb(15, 189, 160)";
+            btn2.style.background="rgb(13, 47, 56)";
+            form1.style.display="block";
+            form2.style.display="none";
+       });
+       btn2.addEventListener('click',function(){
+            btn1.style.background="rgb(13, 47, 56)";
+            btn2.style.background="rgb(15, 189, 160)";
+            form2.style.display="block";
+            form1.style.display="none";
+       });
+   </script>
+</body>
+</html>
